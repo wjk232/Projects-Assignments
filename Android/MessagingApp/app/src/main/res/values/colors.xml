@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryold">#3F51B5</color>
+    <color name="colorPrimaryDarkold">#303F9F</color>
+    <color name="colorPrimary">#016AF4</color>
+    <color name="colorPrimaryDark">#016AF4</color>
+    <color name="colorAccent">#4C4CFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_lightgrey">#FAFAFA</color>
+    <color name="window_color">#FAFAFA</color>
+    <color name="color_grey">#D3D3D3</color>
+    <color name="color_blue">#016AF4</color>
+    <color name="timerBarColor">#AACCFF</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ContactsActivity"
+    tools:showIn="@layout/activity_contacts">
+    <EditText
+        android:id="@+id/filter"
+        android:hint="filter"
+        android:layout_marginRight="50dp"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_search_black_36dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/icon_click_effect_rec"
+        android:layout_height="@dimen/button_height"
+       />
+    <ListView
+        android:layout_below="@+id/filter"
+        android:id="@+id/contacts_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+</RelativeLayout>

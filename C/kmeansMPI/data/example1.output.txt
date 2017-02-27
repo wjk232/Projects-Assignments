@@ -1,0 +1,5 @@
+Reading from data file: data/example1_k2_m10.txt.
+Finding 2 clusters
+centers found:
+40.270400, -185.246600
+-85.972000, -13.155800

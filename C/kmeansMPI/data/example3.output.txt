@@ -1,0 +1,8 @@
+Reading from data file: data/example3_k5_m500.txt.
+Finding 5 clusters
+centers found:
+-112.846840, 138.489590
+120.734130, 133.607720
+-174.815190, -45.055060
+-27.182890, 192.848140
+-70.184220, -71.774100

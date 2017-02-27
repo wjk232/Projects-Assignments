@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ReadActivity"
+    tools:showIn="@layout/activity_read">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sender_name"
+            android:textSize="@dimen/normal_font"
+            android:textIsSelectable="true"
+            android:hint="Name"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TTL"
+            android:background="@drawable/border"
+            android:textSize="@dimen/normal_font"
+            android:soundEffectsEnabled="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/color_grey"
+        android:layout_height="2dp" />
+    <TextView
+        android:id="@+id/subject_line"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/normal_font"
+        android:hint="Subject"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/view_msg"
+        android:background="@drawable/border"
+        android:textColor="@color/color_black"
+        android:textIsSelectable="true"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/message_font"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/reply_button"
+            android:text="Reply"
+            android:textSize="@dimen/button_font"
+            android:textColor="@color/color_black"
+            android:layout_marginLeft="200dp"
+            android:layout_width="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/button_height"
+            android:onClick="goComposeReply"/>
+        <ImageButton
+            android:id="@+id/trash_button"
+            android:textColor="@color/color_black"
+            android:layout_width="40dp"
+            android:src="@mipmap/ic_delete_black_36dp"
+            android:soundEffectsEnabled="true"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_height="@dimen/button_height"
+            android:onClick="goHomeTrash"/>
+    </RelativeLayout>
+
+</LinearLayout>

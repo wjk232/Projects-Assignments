@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ComposeActivity"
+    tools:showIn="@layout/activity_compose">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="To:"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/normal_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/to_name"
+            android:textSize="@dimen/normal_font"
+            android:hint="click to add"
+            android:layout_marginLeft="@dimen/margin_compose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:onClick="goToContacts"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/color_grey"
+        android:layout_height="2dp" />
+    <EditText
+        android:id="@+id/subject_line"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/normal_font"
+        android:focusableInTouchMode="true"
+        android:hint="Add Subject:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/insert_msg"
+        android:background="@drawable/border"
+        android:textColor="@color/color_black"
+        android:hint="Type message here:"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:textSize="@dimen/message_font"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height">
+        <ImageButton
+            android:id="@+id/trash_button"
+            android:textColor="@color/color_black"
+            android:layout_width="40dp"
+            android:src="@mipmap/ic_delete_black_36dp"
+            android:background="@drawable/icon_click_effect_rec"
+            android:layout_alignParentLeft="true"
+            android:layout_height="@dimen/button_height"
+            android:onClick="goHomeTrash"/>
+        <Button
+            android:id="@+id/reply_button"
+            android:text="Send"
+            android:textSize="@dimen/button_font"
+            android:textColor="@color/color_black"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/button_height"
+            android:onClick="goHomeSend"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:id="@+id/ttl_button"
+            android:textColor="@color/color_black"
+            android:layout_width="40dp"
+            android:src="@mipmap/ic_hourglass_empty_black_36dp"
+            android:soundEffectsEnabled="true"
+            android:background="@drawable/icon_click_effect_rec"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/button_height"
+            android:onClick="goTTL"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

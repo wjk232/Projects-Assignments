@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="normal_font">25dp</dimen>
+    <dimen name="message_font">20dp</dimen>
+    <dimen name="button_font">15dp</dimen>
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="image_button_height">35dp</dimen>
+    <dimen name="margin_compose">40dp</dimen>
+    <dimen name="image_list_contact">55dp</dimen>
+    <dimen name="settings_pic">400dp</dimen>
+</resources>
